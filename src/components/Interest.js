@@ -5,9 +5,9 @@ const Interest = () => {
     <div className='about interest'>
      <h2 className="title2">Interest</h2>
      <ul>
- <li><i className="fa-solid fa-gamepad"></i>game</li>
-        <li><i className="fa-solid fa-book"></i>Reading books</li>
-        <li><i className="fa-solid fa-gamepad"></i>listening songs</li>
+     <li>Reading books</li>
+      <li>listening songs</li>
+      <li>Cricket</li>
      </ul>
     </div>
   )

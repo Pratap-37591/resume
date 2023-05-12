@@ -1,29 +1,14 @@
-import React from 'react'
+// import React, { useContext, useState } from 'react'
+// import { ContactInfo } from '../App';
 
 const Language = () => {
+  // const usercontact = useContext(ContactInfo).languageTodoList;
+
+  // const [lng, setLng] = useState(usercontact)
   return (
     <div className="contactInfo language">
     <h3 className="title">Languages</h3>
-    <ul>
-      <li>
-        <span className='text'>English</span>
-        <span className="percent">
-          <div style={{width: '85%'}}></div>
-        </span>
-        </li>
-      <li>
-        <span className='text'>Kannada</span>
-        <span className="percent">
-        <div style={{width: '90%'}}></div>
-        </span>
-        </li>
-      <li>
-        <span className='text'>Hindi</span>
-        <span className="percent">
-        <div style={{width: '30%'}}></div>
-        </span>
-        </li>
-        </ul>
+    
         </div>
   )
 }

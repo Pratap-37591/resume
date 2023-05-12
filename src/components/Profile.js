@@ -1,12 +1,15 @@
 import React from 'react'
+// import { ContactInfo } from '../App';
 
-const Profile = () => {
+const Profile = ({profile}) => {
+
+
   return (
     <div className='about'>
-   <h2 className='title2'>Profile Info</h2>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias inventore omnis suscipit aliquam numquam soluta,<br /> <br /> ut unde eaque aut quia eveniet officia consequatur necessitatibus illo voluptates et deleniti? Praesentium.</p>
+      <h2 className='title2'>Profile Info</h2>
+      <p>{profile}</p>
     </div>
   )
 }
 
-export default Profile
+export default Profile;

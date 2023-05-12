@@ -1,23 +1,27 @@
-import React from 'react'
+import React, { useContext }  from 'react'
 import Contact from './Contact'
 import Education from './Education'
 import Language from './Language'
+import { ContactInfo } from '../App';
+
 
 const Leftside = () => {
+  const usercontact = useContext(ContactInfo).contactProfile;
 
+  
   return (
     <>
     <div className='profielText'>
      <figure className='profile'>
-      <img src="image/profile1.avif" alt="na" />
+      <img src="image\download.png" alt="na" />
      </figure>
-     <h2>Pratap<br /> <span>Web dev</span> </h2>
+     <h2>{usercontact.name}<br /> <span>{usercontact.role}</span> </h2>
      </div>
-     <Contact/>
+     <Contact />
      <Education/>
      <Language/>
     </>
   )
 }
 
-export default Leftside
+export default Leftside;

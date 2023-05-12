@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-wrap: break-word;
 }
 
 .container{
@@ -34,6 +35,8 @@ body {
     position: relative;
     background-color: #071e36f2;
     padding: 40px;
+   word-break: break-all;
+   
 }
 .container .right_side{
     position: relative;
@@ -142,24 +145,6 @@ body {
     font-weight: 300;
 }
 
-.contactInfo.language .percent{
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background-color: #081921;
-    display: block;
-    margin-top: 5px;
-}
-
-.contactInfo.language .percent div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #03a9f4;
-    
-}
-
 .about{
     margin-bottom: 50px;
 
@@ -220,32 +205,25 @@ align-items: center;
     height: 10px;
     background-color: #f0f0f0;
 }
-.skills .box  .percent div{
-   position: absolute;
-   top: 0;
-   left: 0;
-   height: 100%;
-   background-color: #03a9f4;
-}
+
 .interest ul{
     display: grid;
-    grid-template-columns: repeat(4,1.2fr);
-
+    grid-template-columns: repeat(4,1fr);
 }
 .interest ul li{
     list-style: none;
     margin: 10px 0;
     font-weight: 500;
     color: #333;
+
 }
-.interest ul li .fa{
+.interest ul li .fa-solid{
     color: #03a9f4;
-    font-size: 18px;
+    font-size: 17px;
     width: 20px;
 }
 
 .buttons {
-    
    display: flex;
     justify-content: space-between;
   text-align: center;
@@ -273,12 +251,72 @@ align-items: center;
     position: absolute;
     top: 50px;
     font-size: 1rem;
-    right: 180px;
+    right: 140px;
     padding: 10px 10px;
     border-radius: 10px;
      border: none;
      outline: none;
 }
+
+/* onclick and resume template move aside */
+.resume {
+    /* position: fixed; */
+    top: 0;
+    left: 30px;
+    width: 1000px;
+    min-height: 1000px;
+
+    /* background-color: white; */
+    z-index: 1;
+    transition: transform 0.3s ease-in-out,  display 0.3s ease-in-out;
+  }
+  
+  .edit-button {
+    /* position: fixed; */
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+  
+
+  .resume-expanded {
+ /* width: 300px ; */
+ display: grid;
+ grid-template-columns: 2fr;
+  }
+
+
+  
+  .form-display{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 0.2rem;
+    right: 60px;
+    width: 300px;
+    top: 50px;
+   height: 50%;
+  }
+  /* .form-display label{
+    color: white;
+    font-size: 1.1rem;
+  } */
+  .form-display input{
+    width: 100%;
+    display: inline-block;
+    border: none;
+    padding: 0.2rem 0.2rem;
+    outline: none;
+  }
+
+  .form-display button{
+    width: 100%;
+    display: inline-block;
+    border: none;
+    padding: 0.2rem 0.2rem;
+    outline: none;
+  }
+
 @media  (max-width: 1000px) {
     .container{
         margin: 10px;
