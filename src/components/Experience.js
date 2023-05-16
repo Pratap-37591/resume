@@ -2,6 +2,7 @@ import React from 'react'
 
 const Experience = () => {
   return (
+    
     <div className='about'>
      <h2 className='title2'>Experience</h2>
      <div className="box">

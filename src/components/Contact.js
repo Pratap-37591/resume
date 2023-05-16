@@ -9,7 +9,7 @@ const Contact = () => {
 
 
   return (
-
+  
     <div className="contactInfo">
       <h3 className="title">Contact Info</h3>
       <ul>
@@ -36,7 +36,7 @@ const Contact = () => {
         </li>
       </ul>
     </div>
-
+  
   )
 }
 

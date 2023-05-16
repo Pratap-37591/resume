@@ -317,6 +317,20 @@ align-items: center;
     outline: none;
   }
 
+  .addbutton{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .horizontal{
+    margin-top: 20px;
+    width: 300px;
+    border-bottom: 1px solid skyblue;
+  }
+
 @media  (max-width: 1000px) {
     .container{
         margin: 10px;
