@@ -1,8 +1,8 @@
-import React from 'react'
-// import { ContactInfo } from '../App';
+import React, { useContext } from 'react'
+import { ContactInfo } from '../App';
 
-const Profile = ({profile}) => {
-
+const Profile = () => {
+  const profile = useContext(ContactInfo).profile;
 
   return (
     <div className='about'>

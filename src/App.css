@@ -145,6 +145,11 @@ body {
     font-weight: 300;
 }
 
+.contactInfo.education ul li{
+    list-style: none;
+    color: white;
+}
+
 .about{
     margin-bottom: 50px;
 
@@ -258,6 +263,11 @@ align-items: center;
      outline: none;
 }
 
+
+.language ul li{
+list-style: none;
+color: white;
+}
 /* onclick and resume template move aside */
 .resume {
     /* position: fixed; */
@@ -301,6 +311,8 @@ align-items: center;
     color: white;
     font-size: 1.1rem;
   } */
+
+  
   .form-display input{
     width: 100%;
     display: inline-block;
@@ -331,6 +343,52 @@ align-items: center;
     border-bottom: 1px solid skyblue;
   }
 
+
+/* form */
+.education input[type="text"]:nth-last-of-type(1) {
+     margin-bottom: 20px;
+  }
+
+  .education button{
+    margin-bottom: 10px;
+    color: white;
+    background: linear-gradient(#03a9f4, #2a7da2 80%);
+  }
+
+  .update{
+    margin-top: 20px;
+    color: white;
+    background: linear-gradient(#03a9f4, #2a7da2 80%);
+  }
+  
+
+  /* laguage */
+  .lang button{
+    margin-top: 15px;
+    color: white;
+    background: linear-gradient(#03a9f4, #2a7da2 80%);
+  }
+
+
+  /* education */
+
+  .todos ul li{
+    list-style: none;
+  }
+   .todos button{
+    width: 40%;
+    
+    margin-left: 30px;
+   }
+   
+   .lnguage  ul li{
+    list-style: none;
+   }
+   .lnguage button{
+    width: 40%;
+    
+    margin-left: 30px;
+   }
 @media  (max-width: 1000px) {
     .container{
         margin: 10px;

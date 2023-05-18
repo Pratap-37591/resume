@@ -3,6 +3,7 @@ import Contact from './Contact'
 import Education from './Education'
 import Language from './Language'
 import { ContactInfo } from '../App';
+import TodoList from './Todo';
 
 
 const Leftside = () => {

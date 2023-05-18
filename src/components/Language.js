@@ -1,12 +1,19 @@
-import React from 'react'
-
+import React, { useContext } from 'react'
+import { ContactInfo } from '../App';
 
 const Language = () => {
-
+  const language = useContext(ContactInfo).lang;
   return (
     <div className="contactInfo language">
-    <h3 className="title">language</h3>
-    
+    <h3 className="title">Language</h3>
+    <ul>
+        {language && 
+        language.map((todo, index) => (
+          <li key={index}>
+           {todo}
+          </li>
+        ))}
+      </ul>
         </div>
   )
 }

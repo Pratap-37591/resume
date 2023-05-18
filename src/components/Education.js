@@ -1,22 +1,27 @@
 import React, { useContext } from 'react'
 import { ContactInfo } from '../App';
 
-const Education = () => {
+const Education = ({newTodo,todos,setNewTodo,handleDeleteTodo}) => {
+  const education = useContext(ContactInfo).todos;
 
-  const education = useContext(ContactInfo).educationData;
+  console.log(education);
   return (
    
     <div className="contactInfo education">
       <h3 className="title">Education</h3>
+      
       <ul>
-        <li>
-          <h5>{education.startYear} - {education.endYear}</h5>
-          <h4>{education.courses}</h4>
-          <h4>{education.schools}</h4>
-        </li>
-        
+        { education && 
+        education.map((todo, index) => (
+          <li key={index}>
+
+           <li> {todo}</li>
+          </li>
+        ))}
       </ul>
-    </div>
+      
+      
+        </div>
 
   )
 }

@@ -4,12 +4,7 @@ import { ContactInfo } from '../App';
 
 const Contact = () => {
   const usercontact = useContext(ContactInfo).contactProfile;
-
-
-
-
   return (
-  
     <div className="contactInfo">
       <h3 className="title">Contact Info</h3>
       <ul>
@@ -18,7 +13,6 @@ const Contact = () => {
           <span className='text'>{usercontact.tel}</span>
         </li>
         <li>
-
           <span className='icon'><i className="fa-solid fa-envelope"></i></span>
           <span className='text'>{usercontact.email}</span>
         </li>
