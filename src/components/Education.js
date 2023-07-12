@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { ContactInfo } from '../App';
 
-const Education = ({newTodo,todos,setNewTodo,handleDeleteTodo}) => {
+const Education = () => {
   const education = useContext(ContactInfo).todos;
 
   console.log(education);
@@ -14,9 +14,9 @@ const Education = ({newTodo,todos,setNewTodo,handleDeleteTodo}) => {
         { education && 
         education.map((todo, index) => (
           <li key={index}>
-
-           <li> {todo}</li>
+            {todo}
           </li>
+          
         ))}
       </ul>
       

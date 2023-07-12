@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ContactInfo } from '../App';
 
 const Interest = () => {
+  const interest = useContext(ContactInfo).interest;
+
   return (
     <div className='about interest'>
      <h2 className="title2">Interest</h2>
      <ul>
-     <li>Reading books</li>
-      <li>listening songs</li>
-      <li>Cricket</li>
+     <div className='interest'>
+     <ul>
+        {interest.map((intr, index) => (
+          <li key={index}>
+            {intr}
+          </li>
+        ))}
+      </ul>
+      </div>
      </ul>
     </div>
   )

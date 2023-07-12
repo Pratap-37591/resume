@@ -10,9 +10,9 @@ const Expertise = () => {
     <div className="box">
     <ul>
         {skill && 
-        skill.map((todo, index) => (
+        skill.map((item, index) => (
           <li key={index}>
-           {todo}
+           {item}
           </li>
         ))}
       </ul>

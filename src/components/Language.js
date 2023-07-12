@@ -8,9 +8,9 @@ const Language = () => {
     <h3 className="title">Language</h3>
     <ul>
         {language && 
-        language.map((todo, index) => (
+        language.map((langu, index) => (
           <li key={index}>
-           {todo}
+           {langu}
           </li>
         ))}
       </ul>
