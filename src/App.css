@@ -42,6 +42,8 @@ body {
     position: relative;
     background-color: #fff;
     padding: 40px;
+   word-break: break-all;
+
 }
 
 .profielText{
@@ -189,6 +191,10 @@ p{
     font-size: 16px;
 }
 
+.about .profile-des{
+    text-indent: 13%;
+}
+
 .skills .box
 {
 position: relative;
@@ -267,6 +273,14 @@ align-items: center;
 .language ul li{
 list-style: none;
 color: white;
+}
+
+.skill ul li{
+    list-style: none;
+}
+
+.box ul li{
+    list-style: none;
 }
 /* onclick and resume template move aside */
 .resume {
@@ -360,11 +374,27 @@ color: white;
     color: white;
     background: linear-gradient(#03a9f4, #2a7da2 80%);
   }
+
+  .profile input[type="text"]:nth-last-of-type(1){
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
   
+   .experience  input[type="text"]:nth-last-of-type(1){
+     margin-bottom: 6px;
+   }
+
+   .experience button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+    background: linear-gradient(#03a9f4, #2a7da2 80%);
+   }
 
   /* laguage */
   .lang button{
     margin-top: 15px;
+    margin-bottom: 10px;
     color: white;
     background: linear-gradient(#03a9f4, #2a7da2 80%);
   }
@@ -388,7 +418,40 @@ color: white;
     width: 40%;
     
     margin-left: 30px;
+   } 
+
+
+   .skill button{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: white;
+    background: linear-gradient(#03a9f4, #2a7da2 80%);
    }
+ 
+   .interest button{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: white;
+    background: linear-gradient(#03a9f4, #2a7da2 80%);
+   }
+
+   .button-prev{
+      display: flex;
+      margin-top: 10px;
+     gap: 2rem;
+    }
+
+    .btn1{
+        color: white;
+        background: linear-gradient(#1d9bb4, #2a7da2 80%);
+    }
+
+     .btn2{
+        color: white;
+        background: linear-gradient(#f48403, #a22a2a 80%);
+    }
+     
+
 @media  (max-width: 1000px) {
     .container{
         margin: 10px;
